@@ -1,0 +1,13 @@
+@import "tokens/all";
+@import "themes/dark";
+@import "vendors/reset";
+
+body {
+  background: $body-bg-color;
+  color: $text-color;
+  font-family: $font-public;
+}
+
+* {
+  border-color: $border-color-idle;
+}

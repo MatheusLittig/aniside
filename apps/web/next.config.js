@@ -1,6 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  transpilePackages: ["@aniside/presets", "@aniside/ui"],
+  transpilePackages: ["@aniside/presets", "@aniside/ui", "@aniside/styles"],
   experimental: {
     appDir: true,
   },
