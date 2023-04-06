@@ -1,5 +1,11 @@
 {
   "extends": "@aniside/presets/tsconfigs/react-library.json",
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@ui/*": ["./src/*"]
+    }
+  },
   "include": [
     "next-env.d.ts",
     "**/*.ts",

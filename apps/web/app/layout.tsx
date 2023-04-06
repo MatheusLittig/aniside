@@ -1,5 +1,6 @@
-import "@aniside/styles/src/global.scss";
+import "./styles.css";
 import { Public_Sans as FontSans } from "next/font/google";
+import { AppWrapper } from "@aniside/ui";
 
 const fontSans = FontSans({
   subsets: ["latin"],
@@ -16,9 +17,5 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
-  return (
-    <html lang="en" className={fontSans.variable}>
-      <body>{children}</body>
-    </html>
-  );
+  return <AppWrapper className={fontSans.className}>{children}</AppWrapper>;
 }

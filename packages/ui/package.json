@@ -1,5 +1,9 @@
 {
   "name": "@aniside/ui",
   "version": "1.0.0",
-  "main": "index.tsx"
+  "main": "./src/index.ts",
+  "devDependencies": {
+    "@aniside/styles": "1.0.0",
+    "class-variance-authority": "^0.4.0"
+  }
 }
