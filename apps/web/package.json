@@ -9,7 +9,6 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@aniside/styles": "1.0.0",
     "@aniside/ui": "1.0.0",
     "next": "^13.1.1",
     "react": "^18.2.0",

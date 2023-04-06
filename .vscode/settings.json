@@ -7,10 +7,10 @@
     "presets": "json",
     "linters": "less",
     "tsconfigs": "typescript",
-    "transformers": "ci",
+    "translators": "ci",
     "adapters": "cluster",
     "parts": "queue",
-    "store": "Redux-store"
+    "store": "Redux-store",
   },
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": true,

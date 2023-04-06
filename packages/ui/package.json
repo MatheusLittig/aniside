@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "./src/index.ts",
   "devDependencies": {
-    "@aniside/styles": "1.0.0",
+    "@aniside/helpers": "1.0.0",
     "class-variance-authority": "^0.4.0"
   }
 }

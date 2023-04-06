@@ -1,4 +1,5 @@
 import { HTMLAttributes } from "react";
+import { splitProps } from "@aniside/helpers";
 import { cva, VariantProps } from "class-variance-authority";
 
 const className = cva(
@@ -23,9 +24,11 @@ const className = cva(
 type ButtonProps = HTMLAttributes<HTMLButtonElement> &
   VariantProps<typeof className>;
 
-const Button = ({ children, type, ...props }: ButtonProps) => {
+const Button = ({ children, ...props }: ButtonProps) => {
+  const [variants, rest] = splitProps(props, ["type", "size"]);
+
   return (
-    <button className={className({ type })} {...props}>
+    <button className={className(variants)} {...rest}>
       {children}
     </button>
   );
