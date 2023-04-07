@@ -10,8 +10,6 @@ function splitProps<T extends Record<string, any>, F extends keyof T>(
 ) {
   const keys = Object.keys(props) as F[];
 
-  console.log(props);
-
   return [
     splited.reduce((acc, curr) => ({ ...acc, [curr]: props[curr] }), {}),
     keys

@@ -1,5 +1,11 @@
 {
   "extends": "@aniside/presets/tsconfigs/nextjs.json",
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@ui/*": ["../../packages/ui/src/*"]
+    }
+  },
   "include": [
     "next-env.d.ts",
     "**/*.ts",

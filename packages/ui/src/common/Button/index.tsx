@@ -3,16 +3,16 @@ import { splitProps } from "@aniside/helpers";
 import { cva, VariantProps } from "class-variance-authority";
 
 const className = cva(
-  "text-gray-100 flex items-center justify-center rounded-md px-2 py-1",
+  "text-black-100 flex items-center justify-center rounded px-3 py-1",
   {
     variants: {
       type: {
         primary:
-          "bg-blue-500 border border-1 border-blue-500 hover:bg-transparent hover:text-blue-500",
+          "bg-denim-700 border border-1 border-denim-700 hover:bg-transparent hover:text-denim-700",
         secondary:
           "bg-red-500 border border-1 border-red-500 hover:bg-transparent hover:text-red-500",
       },
-      size: { sm: "h-7", md: "h-9", lg: "h-12" },
+      size: { sm: "h-10", md: "h-9", lg: "h-12" },
     },
     defaultVariants: {
       type: "primary",
